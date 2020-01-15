@@ -7,11 +7,11 @@
     <author>Todaro Giovanni - Consiglio Nazionale delle Ricerche -  Istituto per le Tecnologie Didattiche</author>
     <authorEmail>giovanni.todaro@itd.cnr.it</authorEmail>
     <authorUrl>http://www.pa.itd.cnr.it</authorUrl>
-    <version>CVS: 1.0.0</version>
+    <version>CVS: 1.0.1</version>
     <description>COM_TGLINKS_XML_DESCRIPTION</description>
-    
-    
-    
+
+
+
     <install> <!-- Runs on install -->
         <sql>
             <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
@@ -43,13 +43,13 @@
         <folder>css</folder>
     </media>
     <languages folder="site/languages">
-        
+
 			<language tag="en-GB">en-GB/en-GB.com_tglinks.ini</language>
     </languages>
     <administration>
         <menu>COM_TGLINKS</menu>
         <submenu>
-            
+
 			<menu link="option=com_tglinks&amp;view=links" view="links" alt="Tglinks/Links">COM_TGLINKS_TITLE_LINKS</menu>
 
         </submenu>
@@ -68,7 +68,7 @@
             <folder>views</folder>
         </files>
         <languages folder="administrator/languages">
-            
+
 			<language tag="en-GB">en-GB/en-GB.com_tglinks.ini</language>
 			<language tag="en-GB">en-GB/en-GB.com_tglinks.sys.ini</language>
         </languages>
@@ -83,7 +83,7 @@
     <plugins>
         <plugin group="search" plugin="tglinks"/>
     </plugins>
-    
+
 </extension>
 <!-- Component built by the Joomla Component Creator -->
 <!-- http://www.component-creator.com/ -->

@@ -1,6 +1,6 @@
 <?php
 /**
- * @version    CVS: 1.0.0
+ * @version    CVS: 1.0.1
  * @package    Com_Tglinks
  * @author     Todaro Giovanni - Consiglio Nazionale delle Ricerche -  Istituto per le Tecnologie Didattiche <giovanni.todaro@itd.cnr.it>
  * @copyright  2020 Todaro Giovanni - Consiglio Nazionale delle Ricerche -  Istituto per le Tecnologie Didattiche
@@ -34,6 +34,12 @@ $canDelete  = $user->authorise('core.delete', 'com_tglinks');
 $document = Factory::getDocument();
 $document->addStyleSheet(Uri::root() . 'media/com_tglinks/css/list.css');
 ?>
+
+<?php if ( $this->params->get('show_page_heading')!=0) : ?>
+    <h1>
+<?php echo $this->escape($this->params->get('page_heading')); ?>
+    </h1>
+<?php endif; ?>
 
 <form action="<?php echo htmlspecialchars(Uri::getInstance()->toString()); ?>" method="post"
       name="adminForm" id="adminForm">

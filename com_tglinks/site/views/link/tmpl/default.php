@@ -1,6 +1,6 @@
 <?php
 /**
- * @version    CVS: 1.0.0
+ * @version    CVS: 1.0.1
  * @package    Com_Tglinks
  * @author     Todaro Giovanni - Consiglio Nazionale delle Ricerche -  Istituto per le Tecnologie Didattiche <giovanni.todaro@itd.cnr.it>
  * @copyright  2020 Todaro Giovanni - Consiglio Nazionale delle Ricerche -  Istituto per le Tecnologie Didattiche
@@ -16,11 +16,16 @@ if (!$canEdit && JFactory::getUser()->authorise('core.edit.own', 'com_tglinks' .
 	$canEdit = JFactory::getUser()->id == $this->item->created_by;
 }
 ?>
+<?php if ( $this->params->get('show_page_heading')!=0) : ?>
+    <h1>
+<?php echo $this->escape($this->params->get('page_heading')); ?>
+    </h1>
+<?php endif; ?>
 
 <div class="item_fields">
 
 	<table class="table">
-		
+
 
 		<tr>
 			<th><?php echo JText::_('COM_TGLINKS_FORM_LBL_LINK_TITLE'); ?></th>

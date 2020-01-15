@@ -1,6 +1,6 @@
 <?php
 /**
- * @version    CVS: 1.0.0
+ * @version    CVS: 1.0.1
  * @package    Com_Tglinks
  * @author     Todaro Giovanni - Consiglio Nazionale delle Ricerche -  Istituto per le Tecnologie Didattiche <giovanni.todaro@itd.cnr.it>
  * @copyright  2020 Todaro Giovanni - Consiglio Nazionale delle Ricerche -  Istituto per le Tecnologie Didattiche
@@ -31,6 +31,11 @@ $canEdit = TglinksHelpersTglinks::canUserEdit($this->item, $user);
 
 
 ?>
+<?php if ( $this->params->get('show_page_heading')!=0) : ?>
+    <h1>
+<?php echo $this->escape($this->params->get('page_heading')); ?>
+    </h1>
+<?php endif; ?>
 
 <div class="link-edit front-end-edit">
 	<?php if (!$canEdit) : ?>
@@ -47,7 +52,7 @@ $canEdit = TglinksHelpersTglinks::canUserEdit($this->item, $user);
 		<form id="form-link"
 			  action="<?php echo Route::_('index.php?option=com_tglinks&task=link.save'); ?>"
 			  method="post" class="form-validate form-horizontal" enctype="multipart/form-data">
-			
+
 	<input type="hidden" name="jform[id]" value="<?php echo $this->item->id; ?>" />
 
 	<input type="hidden" name="jform[ordering]" value="<?php echo $this->item->ordering; ?>" />

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <updates>
 	<update>
-		<name>TGlinks</name>
+		<name>Todaro Giovanni Links Manager</name>
 		<description>Todaro Giovanni links Manager</description>
 		<element>com_tglinks</element>
 		<type>package</type>

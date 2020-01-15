@@ -2,7 +2,7 @@
 <updates>
 	<update>
 		<name>TGlinks</name>
-		<description>Giovanni Todaro Weblinks</description>
+		<description>Todaro Giovanni links Manager</description>
 		<element>com_tglinks</element>
 		<type>package</type>
 		<version>1.0.1</version>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <updates>
 	<update>
-		<name>Todaro Giovanni Links Manager</name>
+		<name>com_tglinks</name>
 		<description>Todaro Giovanni links Manager</description>
 		<element>com_tglinks</element>
-		<type>package</type>
-		<version>1.0.1</version>
+		<type>component</type>
+		<version>2.0</version>
 		<client>site</client>
 		<infourl title="Weblinks Extension Package">https://github.com/todarogiovanni1980/com_tglinks/releases/tag/v1.0.1</infourl>
 		<downloads>
-			<downloadurl type="full" format="zip">https://github.com/todarogiovanni1980/com_tglinks/archive/v1.0.1.zip</downloadurl>
+			<downloadurl type="full" format="zip">https://www.pa.itd.cnr.it/phocadownload/userupload/com_tglinks-1.0.1.zip</downloadurl>
 		</downloads>
 		<targetplatform name="joomla" version="3.[6789]" />
 	</update>

@@ -68,9 +68,8 @@
             <folder>views</folder>
         </files>
         <languages folder="administrator/languages">
-
-			<language tag="en-GB">en-GB/en-GB.com_tglinks.ini</language>
-			<language tag="en-GB">en-GB/en-GB.com_tglinks.sys.ini</language>
+    			<language tag="en-GB">en-GB/en-GB.com_tglinks.ini</language>
+    			<language tag="en-GB">en-GB/en-GB.com_tglinks.sys.ini</language>
         </languages>
     </administration>
     <config>
@@ -87,5 +86,3 @@
        <server type="extension" priority="2" name="Todaro Giovanni Extension's Updates">https://raw.githubusercontent.com/todarogiovanni1980/com_tglinks/master/manifest.xml</server>
     </updateservers>
 </extension>
-<!-- Component built by the Joomla Component Creator -->
-<!-- http://www.component-creator.com/ -->
